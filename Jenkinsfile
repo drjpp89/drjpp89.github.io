@@ -35,7 +35,10 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Jekyll dependencies...'
-                sh 'bundle install --path ${GEM_HOME}'
+                sh '''
+                    bundle config set --local path ${GEM_HOME}
+                    bundle install
+                '''
             }
         }
 
