@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        GEM_HOME = "${env.HOME}/gems"
-        PATH = "${env.GEM_HOME}/bin:${env.PATH}"
+        GEM_HOME = "${env.WORKSPACE}/.gems"
+        PATH = "${env.GEM_HOME}/bin:/usr/bin:${env.PATH}"
     }
 
     stages {
@@ -14,10 +14,28 @@ pipeline {
             }
         }
 
+        stage('Setup Ruby Environment') {
+            steps {
+                echo 'Setting up Ruby environment...'
+                sh '''
+                    # Check Ruby version
+                    ruby --version
+
+                    # Install bundler if not present
+                    if ! command -v bundle &> /dev/null; then
+                        echo "Installing bundler..."
+                        gem install bundler --no-document
+                    fi
+
+                    bundle --version
+                '''
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Jekyll dependencies...'
-                sh 'bundle install'
+                sh 'bundle install --path ${GEM_HOME}'
             }
         }
 
