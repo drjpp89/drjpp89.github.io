@@ -13,8 +13,8 @@ I am a cybersecurity professional with 10 years of experience in networking, IT 
 
 ## What You'll Find Here
 
-- **Projects**: A collection of my work and contributions
-- **About**: Learn more about my background and expertise
-- **Contact**: Get in touch with me
+- **Projects**: This has a collection of my personal projects but also at the same time about my notes from multiple courses and certifications I have work so far. This part might take a while until I get fully up-to-date with everything I have done.
+- **About**: Learn more about my experience, my journey and also what I've done so far in the field. It is about my studies, ups and downs.
+- **Contact**: Get in touch with me, it can be via Linkedin, my email address.
 
 Feel free to explore and reach out if you'd like to connect!
