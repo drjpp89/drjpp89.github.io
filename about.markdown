@@ -37,4 +37,4 @@ I enjoy a lot watching anime, play video games but also spend time doing some ex
 
 ### Contact
 
-Feel free to reach out to me at [jaimeibarraj@protonmail.com](mailto:jaimeibarraj@protonmail.com) or connect with me on [GitHub](https://github.com/drjpp89).
+Feel free to reach out to me at [jaimeibarraj@protonmail.com](mailto:jaimeibarraj@protonmail.com) or connect with me on [GitHub](https://github.com/drjpp89) or [Linkedin](www.linkedin.com/in/jibarra1989).
