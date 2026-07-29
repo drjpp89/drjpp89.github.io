@@ -6,6 +6,12 @@ pipeline {
         PATH = "${env.GEM_HOME}/bin:/usr/bin:${env.PATH}"
     }
 
+    triggers {
+        // Polls GitHub every 5 minutes since Jenkins isn't reachable
+        // for a real push webhook in this environment.
+        pollSCM('H/5 * * * *')
+    }
+
     stages {
         stage('Checkout') {
             steps {
