@@ -3,8 +3,6 @@ layout: page
 title: Home
 ---
 
-# Welcome to My Portfolio
-
 Hello! I'm Jaime Ibarra, and this is my portfolio website.
 
 ## About Me

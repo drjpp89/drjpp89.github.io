@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-## About Me
-
 Hi all.
 I am Jaime, but I also go by Jamie. I am from Ecuador but also speak English fluently and in my spare time I am learning German.
 I enjoy a lot watching anime, play video games but also spend time doing some exercise which varies from yoga, walking, swimming and also dancing salsa. I love cooking and trying new recipes.
