@@ -2,8 +2,11 @@ pipeline {
     agent any
 
     environment {
-        GEM_HOME = "${env.WORKSPACE}/.gems"
-        NPM_CONFIG_PREFIX = "${env.WORKSPACE}/.npm-global"
+        // Kept as siblings of the workspace (not inside it) so `snyk code test`,
+        // which scans the current directory tree and has no --exclude flag,
+        // never sees vendored gem/npm source and flags it as first-party code.
+        GEM_HOME = "${env.WORKSPACE}-gems"
+        NPM_CONFIG_PREFIX = "${env.WORKSPACE}-npm-global"
         PATH = "${env.GEM_HOME}/bin:${env.NPM_CONFIG_PREFIX}/bin:/usr/bin:${env.PATH}"
         SNYK_TOKEN = credentials('snyk-api-token')
     }
