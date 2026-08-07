@@ -3,7 +3,8 @@ pipeline {
 
     environment {
         GEM_HOME = "${env.WORKSPACE}/.gems"
-        PATH = "${env.GEM_HOME}/bin:/usr/bin:${env.PATH}"
+        NPM_CONFIG_PREFIX = "${env.WORKSPACE}/.npm-global"
+        PATH = "${env.GEM_HOME}/bin:${env.NPM_CONFIG_PREFIX}/bin:/usr/bin:${env.PATH}"
         SNYK_TOKEN = credentials('snyk-api-token')
     }
 
