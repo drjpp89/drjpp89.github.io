@@ -36,7 +36,3 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
-
-gem "addressable", ">= 2.9.0"     # fixes CVE-2026-35611 (ReDoS, High)
-gem "concurrent-ruby", ">= 1.3.7" # fixes CVE-2026-54904 (High), CVE-2026-54906 (Med), CVE-2026-54905 (Med)
-gem "json", ">= 2.17.1.2"         # fixes CVE-2026-33210 (Format String, High), CVE-2026-54696 (Med)
